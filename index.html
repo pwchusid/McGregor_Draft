@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--============== GOOGLE ICONS =================-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/cloud-anim.css">
+
+        <title>GrowPlus</title>
+        <link rel="icon" type="image/x-icon" href="./assets/img/logo.png">
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i>GrowPlus
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Nature will make <br> your life better
+                        </h1>
+                        <p class="home__description">
+                            Meet Sally - Our AI/AR/VR assistant. Sally is a Sentient Artificial Intelligence who will turn your backyard into your favorite outdoor recreation. <br> 
+                            Add some green to your life.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="weather-app">
+                        <div class="container">
+                            <h3 class="brand">Check the weather</h3>
+                            <div>
+                                <h1 class="temp">16&#176;</h1>
+                                <div class="city-time">
+                                    <h1 class="name">Cupertino</h1>
+                                    <small>
+                                        <span class="time">06:10</span>
+                                        -
+                                        <span class="date">Monday Sep 19</span>
+                                    </small>
+                                </div>
+                                <div class="weather">
+                                    <img src="./icons/day/113.png" class="icon" alt="icon of a sun" width="50" height="50"/>
+                                    <span class="condition">Cloudy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <form id="locationInput">
+                                <input type="text" class="search" placeholder="Search Location">
+                                <button type="submit" class="submit">
+                                    <span class="material-symbols-outlined">search</span>
+                                </button>
+                            </form>
+
+                            
+                            <ul class="cities">
+                                <li class="city">New York</li>
+                                <li class="city">Toronto</li>
+                                <li class="city">Manila</li>
+                                <li class="city">Lauterbrunnen</li>
+                            </ul>
+                
+                            <ul class="details">
+                                <h4>Weather Details</h4>
+                                
+                                <li>
+                                    <span>Cloudy</span>
+                                    <span class="cloud">89%</span>
+                                </li>
+                
+                                <li>
+                                    <span>Humidity</span>
+                                    <span class="humidity">64%</span>
+                                </li>
+                
+                                <li>
+                                    <span>Wind</span>
+                                    <span class="wind">8km/h</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
+
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/profile.php?id=100084791209888" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/grow_plus1/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/GrowPlus5" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="assets/img/growplus_logo.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            What we offer & <br> why you benefit from it
+                        </h2>
+
+                        <p class="about__description">
+                            It's as easy as 1..2..3! Fill out our proprietary intake form to determine what kind of recreation you want to emulate. <br> Want to go Dinosaur-watching in prehistoric New York? See the Seven Wonders of the World as they are built? Hunt deer in futuristic San Francisco? Sally can do it all.  
+                            
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Turn your backyard into a burgeoning NatureScape!
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Guaranteed 2-day delivery on all supplementary products.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Schedule at-home installation with professional consultation.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                100% satisfaction guaranteed.
+                            </p>
+                        </div>
+
+                        <a href="#products" class="button--link button--flex">
+                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Steps to start your <br> backyard off right
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Geography & Software</h3>
+                            <p class="steps__card-description">
+                                After filling out the form, we will map your property and Sally will get to work on creating the software.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Place an order</h3>
+                            <p class="steps__card-description">
+                                Once your software is set, we can build out your hardware package. See below for products which can complete the experience.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Schedule a visit.</h3>
+                            <p class="steps__card-description">
+                                Sally, alongside our AI-Squad, will come to your house to install the finished product.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="product section container" id="products">
+                <h2 class="section__title-center">
+                    Check out our <br> products
+                </h2>
+
+                <p class="product__description">
+                    Take a look at some of our beautiful products. <br> All of our products are tailormade to ensure compatibility with your software package. 
+                </p>
+
+                <div class="product__container grid">
+                    <article class="product__card">
+
+                        <img src="assets/img/outdoor-products/backpack.png" alt="" class="product__img backpack">
+
+                        <h3 class="product__title">Bahamian Travel Backpack</h3>
+                        <span class="product__price">$149.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card boots__card">
+
+                        <img src="assets/img/outdoor-products/boots.png" alt="" class="product__img boots">
+
+                        <h3 class="product__title">Weird-looking Boot</h3>
+                        <span class="product__price">$119.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+
+                        <img src="assets/img/outdoor-products/flashlight.png" alt="" class="product__img flashlight">
+
+                        <h3 class="product__title">50,000 Lumen SunLight Pro</h3>
+                        <span class="product__price">$117.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+
+                        <img src="assets/img/outdoor-products/jacket.png" alt="" class="product__img jacket">
+
+                        <h3 class="product__title">GoreFlex Hurricane Breaker</h3>
+                        <span class="product__price">$1999.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+
+                        <img src="assets/img/outdoor-products/bottle.png" alt="" class="product__img bottle">
+
+                        <h3 class="product__title">Bottomless PyroFlask</h3>
+                        <span class="product__price">$579.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+
+                        <img src="assets/img/outdoor-products/pants.png" alt="" class="product__img pants">
+
+                        <h3 class="product__title">"Pockets For Days" Hiking Pants</h3>
+                        <span class="product__price">$63.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                    Some common questions <br> we're often asked
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What do you guys do?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    We are a nonprofit start-up looking to water a plant of inspiration in everyone. Whether its hiking, sightseeing, bird-watching, hunting, or just walking through the woods, we want to help nurture a commitment to the outdoors.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do you guys do it?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    By developing strong software and pairing it with excellent hardware, we offer a patent-pending interface-algorithm that integrates nature into everyday life. In other words, we are basically AI-REI.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Who are you guys?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    We were started in 2022 by Peter Chusid and Miles Echavez. See our profile here:
+                                    
+                                <div class="questions__who">
+                                    <a href="https://pwchusid.github.io/Personal-Portfolio-Website/" target="blank">Peter</a>
+
+                                    <a href="https://mrechavez.github.io/Personal-Portfolio-Website/" target="blank">Miles</a>
+                                </div>
+
+                                    
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What is an "eco-profile"?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    "Eco-profile" is our patent-pending term used to illustrate the microcosm of life within nature that we cultivate for you. In other words, we create and grow a small piece of nature for you to then experience, all driven by our AI - Sally. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Why is everything so expensive?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    All of our products are industry-leading and quality-tested to ensure all interaction within your eco-profile is breathlessly beautiful, stunningly interactive, and unwaveringly integrated. Perfection aint cheap!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Do you guys accept AMEX?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    No.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Reach out to us today <br> via any of the given <br> information
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +123 444 4444
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    growplus101@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="https://formspree.io/f/mvolelnd" method="POST" class="contact__form">
+                        <div class="contact__inputs">
+
+                            <div class="contact__content">
+                                <input type="text" name="Name" placeholder="Name" required class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <input type="email" name="Email" placeholder="Email" required class="contact__input">
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" Name="Subject" placeholder="Subject" required class="contact__input">
+                                
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="Message" placeholder="Message" required class="contact__input"></textarea>    
+                            </div>
+
+                        <input type="submit" value="Send Message" class ="button button--flex button__form">
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!--================ Cloud Animation ===============-->
+            <div class="cloud__anim">
+                <div class="container">
+                    <div class="cloud">
+                        <img src="assets/img/cloud-anim/cloud1.png" alt="" style="--i:1">
+                        <img src="assets/img/cloud-anim/cloud2.png" alt="" style="--i:2">
+                        <img src="assets/img/cloud-anim/cloud3.png" alt="" style="--i:3">
+                        <img src="assets/img/cloud-anim/cloud4.png" alt="" style="--i:4">
+                        <img src="assets/img/cloud-anim/cloud5.png" alt="" style="--i:5">
+                    </div>
+                </div>    
+            </div>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Growplus
+                    </a>
+
+                    <h3 class="footer__title">
+                        Subscribe to our newsletter <br> to stay updated
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Enter your email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribe
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">1234 - USA</li>
+                        <li class="footer__information">New England - 08016</li>
+                        <li class="footer__information">123-456-789</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+123 444 4444</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/profile.php?id=100084791209888" target="_blank" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/grow_plus1/" target="_blank" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/GrowPlus5" target="_blank" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        We accept all credit cards
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/card1.png" alt="" class="footer__card">
+                        <img src="assets/img/card2.png" alt="" class="footer__card">
+                        <img src="assets/img/card3.png" alt="" class="footer__card">
+                        <img src="assets/img/card4.png" alt="" class="footer__card">
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Miles & Peter - All rights reserved</p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <!-- =========== WEATHER JS ================-->
+        <script src="assets/js/weather.js"></script>
+    </body>
+</html>
